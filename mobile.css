@@ -25,8 +25,8 @@
 
     .rectangle {
         width: 140px;
-        right: calc(50% - 80px);
-        top: 450px;
+        right: calc(50% - 90px);
+        top: 70vh;
         font-size: 18px;
         border-radius: 20px;
     }

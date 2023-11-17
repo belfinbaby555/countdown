@@ -8,7 +8,7 @@ body {
     height: 640px;
     background-image: url(clock.png);
     background-size: contain;
-    position: absolute;
+    position: fixed;
     right: -300px;
     top: 40px;
     animation: clock 12s linear infinite;
@@ -18,7 +18,7 @@ body {
 .rectangle {
     width: 200px;
     height: fit-content;
-    position: absolute;
+    position: fixed;
     background-color: black;
     right: 220px;
     top: 325px;
