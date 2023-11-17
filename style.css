@@ -93,6 +93,3 @@ h1 {
     letter-spacing: 1px;
     transition: 0.5s;
 }
-.notify:hover,.download_brochure:hover{
-    border-radius:10px 0px 10px 0px ;
-}
