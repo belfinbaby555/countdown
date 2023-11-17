@@ -10,7 +10,7 @@ body {
     background-size: contain;
     position: fixed;
     right: -300px;
-    top: 40px;
+    top: calc(50% - 320px);
     animation: clock 12s linear infinite;
     border-radius: 100%;
 }
@@ -21,7 +21,7 @@ body {
     position: fixed;
     background-color: black;
     right: 220px;
-    top: 325px;
+    top:calc(50% - 40px);
     font-family: 'Poppins', sans-serif;
     color: white;
     text-align: center;
@@ -53,7 +53,7 @@ h1 {
 
 .brochur {
     margin-left: 10vw;
-    font-size: large;
+    font-size: x-large;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -62,6 +62,7 @@ h1 {
     flex-direction: row;
     margin-top: 25px;
     margin-left: 10vw;
+    overflow: visible;
 }
 
 .notify {
@@ -73,9 +74,10 @@ h1 {
     font-family: 'Poppins', sans-serif;
     color: white;
     text-transform: capitalize;
-    font-weight: bold;
     border-radius: 10px;
     font-size: large;
+    letter-spacing: 1px;
+    transition: 0.5s;
 }
 
 .download_brochure {
@@ -83,9 +85,14 @@ h1 {
     width: 150px;
     height: 50px;
     background-color: transparent;
-    border: 3px solid black;
+    border: 2px solid black;
     color: black;
     font-size: large;
     text-transform: capitalize;
     border-radius: 10px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.notify:hover,.download_brochure:hover{
+    border-radius:10px 0px 10px 0px ;
 }

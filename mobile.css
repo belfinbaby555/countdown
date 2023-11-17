@@ -26,7 +26,7 @@
     .rectangle {
         width: 140px;
         right: calc(50% - 90px);
-        top: 70vh;
+        top: 72vh;
         font-size: 18px;
         border-radius: 20px;
     }
@@ -37,17 +37,19 @@
     }
 
     .container {
-        width: 100%;
-        margin: auto;
-        margin-top: 25px;
+        width: 80vw;
+        margin: 10vw;
 
     }
 
     .notify,
     .download_brochure {
         font-size: 18px;
-        width: 100%;
-        margin: 10px;
+        width: calc(100% - 20px);
+        margin:10px 0px;
         font-weight: 300;
+    }
+    .notify{
+        margin:10px 10px ;
     }
 }
