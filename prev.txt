@@ -1,0 +1,13 @@
+<div class="main">
+        <div class="headd">TANTRA<br> 23'
+            <div id="timer" class="timer"></div>
+        </div>
+        <div class="small_headd"></div>
+
+        <input type="button" value="notify button" class="btn" onclick=" showNotification()">
+    </div><br>
+    <img id="rotating-image" src="clock.png" alt="Rotating Image">
+    <div class="bro"> The clock is ticking. <br>Were are coming up with the best <br> Tech fest experience</a>
+        <br><br><a href="">download or view the brochur</a>
+    </div>
+    </div>

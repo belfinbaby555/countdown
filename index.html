@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="clock"></div>
+    <div class="rectangle">
+        <div id="timer" class="timer"></div>
+    </div>
+    <h1>Tantra<br>'23</h1>
+    <div class="brochur"> The clock is ticking. <br>Were are coming up with the best <br> Tech fest experience</a>
+        <br>
+    </div>
+    <div class="container">
+        <button class="notify" onclick=" showNotification()">notify button</button>
+        <button onclick="window.location.href=''" class="download_brochure">view brochure </button>
+    </div>
+    <script>
+        // Set the date we're counting down to (replace with your desired end time)
+        var countDownDate = new Date("Nov 20, 2023 16:20:00").getTime();
+
+        // Update the countdown every 1 second
+        var x = setInterval(function () {
+
+            // Get the current date and time
+            var now = new Date().getTime();
+
+            // Calculate the time remaining
+            var distance = countDownDate - now;
+
+            // Calculate days, hours, minutes, and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="timer"
+            document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+            // If the countdown is over, display a message
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timer").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+
+
+        function showNotification() {
+            // Check if the Notification API is supported by the browser
+            if (!("Notification" in window)) {
+                alert("This browser does not support desktop notification");
+            } else {
+                // Request permission to show notifications
+                Notification.requestPermission().then(function (permission) {
+                    if (permission === "granted") {
+                        // Create a notification
+                        var notification = new Notification("Time's up!", {
+                            body: "Tantra is live.",
+                            icon: "clock.png" // Replace with the path to your notification icon
+                        });
+                    } else {
+                        console.log("Notification permission denied");
+                    }
+                });
+            }
+        }
+
+        // Set the time for the notification (replace with your desired time)
+        var notificationTime = new Date("November 20, 2023 16:22:00 ").getTime();
+
+        // Calculate the time remaining until the notification time
+        var timeRemaining = notificationTime - new Date().getTime();
+
+        // Schedule the notification
+        if (timeRemaining > 0) {
+            setTimeout(showNotification, timeRemaining);
+        } else {
+            console.log("Invalid notification time");
+            console.log(new Date().getTime());
+        }
+
+    </script>
+</body>
+
+</html>

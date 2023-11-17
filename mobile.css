@@ -1,0 +1,53 @@
+@media screen and (max-width:700px) {
+
+    html,
+    body {
+        margin: 0px;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .clock {
+        width: 450px;
+        height: 450px;
+        top: 75vh;
+        right: calc(50% - 225px);
+        position: fixed;
+    }
+
+    h1 {
+        font-size: 75px;
+        line-height: 90px;
+        margin-top: 50px;
+        margin-bottom: 25px;
+        font-weight: bolder;
+    }
+
+    .rectangle {
+        width: 140px;
+        right: calc(50% - 80px);
+        top: 450px;
+        font-size: 18px;
+        border-radius: 20px;
+    }
+
+    .brochur {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .container {
+        width: 100%;
+        margin: auto;
+        margin-top: 25px;
+
+    }
+
+    .notify,
+    .download_brochure {
+        font-size: 18px;
+        width: 100%;
+        margin: 10px;
+        font-weight: 300;
+    }
+}
