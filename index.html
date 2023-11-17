@@ -13,7 +13,7 @@
 <body>
     <div class="clock"></div>
     <div class="rectangle">
-        <div id="timer" class="timer">0d 00h 00m 00s</div>
+        <div id="timer" class="timer"></div>
     </div>
     <h1>Tantra<br>'23</h1>
     <div class="brochur"> The clock is ticking. We are coming up with the best<br> <b>Tech Fest Experience</b></a>
@@ -26,7 +26,6 @@
     <script>
         // Set the date we're counting down to (replace with your desired end time)
         var countDownDate = new Date("Nov 20, 2023 16:20:00").getTime();
-
         // Update the countdown every 1 second
         var x = setInterval(function () {
 
@@ -50,7 +49,7 @@
                 clearInterval(x);
                 document.getElementById("timer").innerHTML = "EXPIRED";
             }
-        }, 1000);
+        },0);
 
 
         function showNotification() {
